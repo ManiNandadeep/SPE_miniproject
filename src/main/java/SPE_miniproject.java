@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class miniproject {
+public class SPE_miniproject {
 
     public static double MySQRT(double x){
         return (double) Math.sqrt(x);

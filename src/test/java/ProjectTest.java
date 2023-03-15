@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class ProjectTest {
-    miniproject obj =  new miniproject();
+    SPE_miniproject obj =  new SPE_miniproject();
     @Test
     public void testSqrt() {
         double result = obj.MySQRT(25);
