@@ -1,12 +1,6 @@
 pipeline {
 
     agent any
-    environment
-    {
-        registry = "maninandadeep/scientific_calculator"
-        registryCredential = "dockerhub"
-        dockerImage = ""
-    }
     stages {
         stage('Git pull stage') {
             steps {
@@ -28,10 +22,10 @@ pipeline {
                 }
             }
         }
-        stage('Docker Build To Image') {
+        stage('Build Docker image') {
             steps {
               script{
-                  dockerImage = docker.build registry + ":latest"
+                    sh 'docker build -t maninandadeep/scientific_calculator .'
               }
             }
         }
