@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="miniproject" />
+        <module name="SPE_miniproject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="miniproject" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
