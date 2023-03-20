@@ -4,47 +4,40 @@ pipeline {
     stages {
         stage('Git pull stage') {
             steps {
-                // Get some code from a GitHub repository
                 git url: 'https://github.com/ManiNandadeep/SPE_miniproject', branch: 'master'
             }
         }
-        stage('Maven Build') {
-            steps {
-                script{
-                    sh 'mvn clean install'
-                }
-            }
-        }
-        stage('Maven test'){
+        stage('Maven Test') {
             steps {
                 script{
                     sh 'mvn clean test'
                 }
             }
         }
+        stage('Maven install'){
+            steps {
+                script{
+                    sh 'mvn clean install'
+                }
+            }
+        }
         stage('Build Docker image') {
             steps {
               script{
-                    sh 'docker build -t maninandadeep/scientific_calculator .'
+
+                    sh 'docker build -t maninandadeep/scientific_calculator:latest .'
               }
             }
         }
-        //  stage('Push Docker Image') {
-        //     steps {
-        //         script{
-        //             docker.withRegistry('','docker-jenkins'){
-        //             imageName.push()
-        //             }
-        //         }
-        //     }
-
-        //  }
-        // stage('Ansible Pull Docker Image') {
-        //     steps {
-        //       ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'ansible', inventory: 'deploy-docker/inventory', playbook: 'deploy-docker/deploy-image.yml', sudoUser: null
-        //     }
-
-        // }
-        
-    }
+         stage('Push Docker Image') {
+            steps {
+                script{
+                        withDockerRegistry([ credentialsId: "dockerhubid", url: "" ])
+                        {
+                            sh 'sudo docker push maninandadeep/scientific_calculator:latest'
+                        }
+                    }
+                }
+            }
+         }
 }

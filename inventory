@@ -1,0 +1,1 @@
+localhost ansible_user=owner ansible_connection=local
