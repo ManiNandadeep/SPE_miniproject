@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="miniproject" target="1.8" />
+      <module name="SPE_miniproject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
