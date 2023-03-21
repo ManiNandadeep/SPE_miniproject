@@ -1,8 +1,11 @@
 ---
 - name: Copy jar file to inventory i.e. Pull docker image
   hosts: all
-  tasks:
-          - name: Pull junit devops image
+  tasks:             
+          - name: Pulling junit devops image 
             docker_image:
                   name: maninandadeep/scientific_calculator
                   source: pull
+
+          - name: creating an updated container
+            shell: docker run -id maninandadeep/scientific_calculator

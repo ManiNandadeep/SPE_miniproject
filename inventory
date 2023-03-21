@@ -1,1 +1,1 @@
-localhost ansible_user=owner ansible_connection=local
+localhost ansible_user=maninandadeep ansible_connection=local ansible_python_interpreter=/usr/bin/python3
