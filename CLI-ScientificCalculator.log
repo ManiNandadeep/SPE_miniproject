@@ -1,0 +1,22 @@
+22/03/2023:14:20:40 134 [SPE_miniproject.java] [INFO] SPE_miniproject [POWER] - 2.0, 2.0
+22/03/2023:14:20:40 190 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - POWER] - 4.0
+22/03/2023:14:20:40 190 [SPE_miniproject.java] [INFO] SPE_miniproject [POWER] - 2.0, 1.0
+22/03/2023:14:20:40 191 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - POWER] - 2.0
+22/03/2023:14:20:40 191 [SPE_miniproject.java] [INFO] SPE_miniproject [POWER] - 2.0, 3.0
+22/03/2023:14:20:40 192 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - POWER] - 8.0
+22/03/2023:14:20:40 192 [SPE_miniproject.java] [INFO] SPE_miniproject [SQRT] - 9.0
+22/03/2023:14:20:40 193 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - SQRT] - 3.0
+22/03/2023:14:20:40 193 [SPE_miniproject.java] [INFO] SPE_miniproject [SQRT] - 25.0
+22/03/2023:14:20:40 193 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - SQRT] - 5.0
+22/03/2023:14:20:40 194 [SPE_miniproject.java] [INFO] SPE_miniproject [LOG] - 2.718281828459045
+22/03/2023:14:20:40 194 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - LOG] - 1.0
+22/03/2023:14:20:40 195 [SPE_miniproject.java] [INFO] SPE_miniproject [LOG] - 10.0
+22/03/2023:14:20:40 195 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - LOG] - 2.302585092994046
+22/03/2023:14:20:40 196 [SPE_miniproject.java] [INFO] SPE_miniproject [FACTORIAL] - 0
+22/03/2023:14:20:40 196 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - FACTORIAL] - 1
+22/03/2023:14:20:40 196 [SPE_miniproject.java] [INFO] SPE_miniproject [FACTORIAL] - 1
+22/03/2023:14:20:40 197 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - FACTORIAL] - 1
+22/03/2023:14:20:40 197 [SPE_miniproject.java] [INFO] SPE_miniproject [FACTORIAL] - 4
+22/03/2023:14:20:40 197 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - FACTORIAL] - 24
+22/03/2023:14:20:40 198 [SPE_miniproject.java] [INFO] SPE_miniproject [FACTORIAL] - 5
+22/03/2023:14:20:40 198 [SPE_miniproject.java] [INFO] SPE_miniproject [RESULT - FACTORIAL] - 120

@@ -1,24 +1,41 @@
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import java.lang.Math;
+
+
 
 public class SPE_miniproject {
+    private static Logger logger = LogManager.getLogger(SPE_miniproject.class);
 
     public static double MySQRT(double x){
-        return (double) Math.sqrt(x);
+        double ans = (double) Math.sqrt(x);
+        logger.info("[SQRT] - " + x);
+        logger.info("[RESULT - SQRT] - " + ans);
+        return ans;
     }
     public static int MyFactorial(int x){
         int factorial = 1;
         for (int i = 1; i <= x; i++) {
             factorial *= i;
         }
+        logger.info("[FACTORIAL] - " + x);
+        logger.info("[RESULT - FACTORIAL] - " + factorial);
         return factorial;
     }
 
     public static double MyLog(double x){
-        return (double) Math.log(x);
+        double ans = (double) Math.log(x);
+        logger.info("[LOG] - " + x);
+        logger.info("[RESULT - LOG] - " + ans);
+        return ans;
     }
 
     public static double MyPow(double x, double b){
-        return (double) Math.pow(x, b);
+        double ans = (double) Math.pow(x, b);
+        logger.info("[POWER] - " + x + ", " + b);
+        logger.info("[RESULT - POWER] - " + ans);
+        return ans;
     }
 
     public static void main(String[] args) {
