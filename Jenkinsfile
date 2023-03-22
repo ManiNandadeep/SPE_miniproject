@@ -21,23 +21,30 @@ pipeline {
                 }
             }
         }
-        stage('Build Docker image') {
-            steps {
-              script{
-
-                    sh 'docker build -t maninandadeep/scientific_calculator:latest .'
-              }
+        stage('Docker Build Image')
+        {
+            steps{
+                script{
+                    imageName = docker.build "maninandadeep/scientific_calculator:latest"
+                }
             }
         }
-         stage('Push Docker Image') {
-            steps {
+        stage('Push Docker Image')
+        {
+            steps{
                 script{
-                        withDockerRegistry([ credentialsId: "dockerhubid", url: "" ])
-                        {
-                            sh 'sudo docker push maninandadeep/scientific_calculator:latest'
-                        }
+                    docker.withRegistry("", 'dockerhubid' ){
+                        imageName.push()
                     }
                 }
             }
-         }
+        }
+        stage('Ansible pull docker image')
+        {
+            steps{
+                sh "/usr/bin/pip3 install docker"
+                sh "ansible-playbook p2.yml -i inventory"
+            }
+        }
+    }
 }
